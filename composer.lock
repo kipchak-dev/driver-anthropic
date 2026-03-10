@@ -238,11 +238,11 @@
         },
         {
             "name": "kipchak/driver-config",
-            "version": "1.10",
+            "version": "1.11",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "7031cac4f32ba925dc8f499a9d6b1f53ad15ff55"
+                "reference": "2c81495337dc8ff76cffcb73050459ccf6cecac6"
             },
             "require": {
                 "kipchak/core": "^2"
@@ -266,7 +266,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-02-23T07:37:28+00:00"
+            "time": "2026-03-02T07:38:49+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1494,16 +1494,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v8.0.6",
+            "version": "v8.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "f425139487f904e198f99e3c416c79ed08cef3c3"
+                "reference": "ade9bd433450382f0af154661fc8e72758b4de36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/f425139487f904e198f99e3c416c79ed08cef3c3",
-                "reference": "f425139487f904e198f99e3c416c79ed08cef3c3",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/ade9bd433450382f0af154661fc8e72758b4de36",
+                "reference": "ade9bd433450382f0af154661fc8e72758b4de36",
                 "shasum": ""
             },
             "require": {
@@ -1566,7 +1566,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v8.0.6"
+                "source": "https://github.com/symfony/http-client/tree/v8.0.7"
             },
             "funding": [
                 {
@@ -1586,7 +1586,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-20T07:51:53+00:00"
+            "time": "2026-03-06T13:17:40+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
