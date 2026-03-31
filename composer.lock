@@ -201,11 +201,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "2.15",
+            "version": "2.16",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "741762d0fa82cbb7000234bb0d093ad98324a8bc"
+                "reference": "7f8f8bbb7ecfbed2d25eea42ef3e32279344d194"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -234,7 +234,7 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2026-03-15T07:35:09+00:00"
+            "time": "2026-03-31T14:14:36+00:00"
         },
         {
             "name": "kipchak/driver-config",
