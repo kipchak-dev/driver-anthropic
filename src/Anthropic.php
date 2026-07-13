@@ -42,7 +42,9 @@ final class Anthropic implements Interfaces\Driver
                     $args = ['apiKey' => $apiKey];
 
                     if (isset($connectionDetails['max_retries'])) {
-                        $args['maxRetries'] = (int) $connectionDetails['max_retries'];
+                        $args['requestOptions'] = \Anthropic\RequestOptions::with(
+                            maxRetries: (int) $connectionDetails['max_retries'],
+                        );
                     }
 
                     $client = new \Anthropic\Client(...$args);
