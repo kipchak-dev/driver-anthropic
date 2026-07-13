@@ -7,10 +7,17 @@ to the Messages API including streaming and tool use.
 
 ## Requirements
 
-- PHP 8.4+
-- [Kipchak](https://kipchak.dev) ^2
+- PHP 8.4 or 8.5
+- [Kipchak](https://kipchak.dev) ^2 || ^3
 - `kipchak/driver-config` ^1
-- `anthropic-ai/sdk` ^0.6
+- `anthropic-ai/sdk` ^0.36
+
+## Versions
+
+- **2.0** — upgrades `anthropic-ai/sdk` to ^0.36 and adds PHP 8.5 support. The driver's config (including `max_retries`) and message API are unchanged; if you use `raw()` to call the SDK directly, review the [SDK changes](https://github.com/anthropics/anthropic-sdk-php/releases). Requires `kipchak/core: ^2 || ^3`.
+- **1.x** — `anthropic-ai/sdk` ^0.6, `kipchak/core` ^2.
+
+See the [Kipchak upgrade guide](https://kipchak.dev/docs/upgrades) for details.
 
 ## Installation
 
