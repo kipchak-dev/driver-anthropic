@@ -14,6 +14,7 @@ to the Messages API including streaming and tool use.
 
 ## Versions
 
+- **2.10** — requests go through Guzzle from the Kipchak HTTP driver (`kipchak/driver-http` `^2.10`) instead of Symfony's HTTP client, which is no longer installed. A connection can name a `psr18` client from `config/kipchak.http.php` with `http_client`; without it, it gets a Guzzle client of its own with a 10-second connect timeout, no limit on the whole request, and a 600-second idle timeout. Streaming is unchanged. If your own code used `symfony/http-client`, require it in your project.
 - **2.0** — upgrades `anthropic-ai/sdk` to ^0.36 and adds PHP 8.5 support. The driver's config (including `max_retries`) and message API are unchanged; if you use `raw()` to call the SDK directly, review the [SDK changes](https://github.com/anthropics/anthropic-sdk-php/releases). Requires `kipchak/core: ^2 || ^3`.
 - **1.x** — `anthropic-ai/sdk` ^0.6, `kipchak/core` ^2.
 
@@ -57,6 +58,7 @@ return [
 | `api_key` | Yes | Anthropic API key |
 | `default_model` | No | Model injected automatically when none is specified on a call |
 | `max_retries` | No | Override the SDK default of 2 automatic retries |
+| `http_client` | No | Name of a `psr18` client in `config/kipchak.http.php`, for a proxy or other timeouts. Without it, a Guzzle client of its own: 10-second connect timeout, no limit on the whole request, 600-second idle timeout |
 
 ## Usage
 
