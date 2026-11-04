@@ -39,5 +39,20 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^12"
+    },
+    "extra": {
+        "kipchak": {
+            "type": "driver",
+            "config": "sample.config.php",
+            "configName": "kipchak.anthropic.php",
+            "initialise": "\\Kipchak\\Driver\\Anthropic\\Anthropic::initialise($container);",
+            "after": [
+                "kipchak/driver-config",
+                "kipchak/driver-logger",
+                "kipchak/driver-http"
+            ],
+            "before": [],
+            "docs": "https://kipchak.dev/docs/driver-anthropic"
+        }
     }
 }
